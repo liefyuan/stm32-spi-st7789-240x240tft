@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F40_41xxx,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\FWLIB\inc;..\HARDWARE\1.44TFT;..\HARDWARE\st7789;..\HARDWARE\encoder</IncludePath>
+              <IncludePath>..\CORE;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\USER;..\HARDWARE\LED;..\FWLIB\inc;..\HARDWARE\1.44TFT;..\HARDWARE\st7789-spi1</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -409,22 +409,22 @@
             <File>
               <FileName>lcd_driver.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\HARDWARE\st7789\lcd_driver.c</FilePath>
+              <FilePath>..\HARDWARE\st7789-spi1\lcd_driver.c</FilePath>
+            </File>
+            <File>
+              <FileName>hal_spi1_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\st7789-spi1\hal_spi1_dma.c</FilePath>
             </File>
             <File>
               <FileName>st7789_gpio_spi.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\HARDWARE\st7789\st7789_gpio_spi.c</FilePath>
+              <FilePath>..\HARDWARE\st7789-spi1\st7789_gpio_spi.c</FilePath>
             </File>
             <File>
-              <FileName>st7789_hal_spi.c</FileName>
+              <FileName>st7789_hal_spi1.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\HARDWARE\st7789\st7789_hal_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>hal_spi_dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\HARDWARE\st7789\hal_spi_dma.c</FilePath>
+              <FilePath>..\HARDWARE\st7789-spi1\st7789_hal_spi1.c</FilePath>
             </File>
           </Files>
         </Group>
